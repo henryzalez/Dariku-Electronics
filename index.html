@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dariku Electronics</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #EEEEEE; /* Fondo gris claro */
+            color: #000000; /* Texto negro para mejor contraste */
+        }
+
+        header {
+            background-color: #E0E0E0;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header img {
+            height: 180px; /* Logo más grande */
+            margin-bottom: 20px; /* Más espacio entre el logo y el menú */
+        }
+
+        nav a {
+            color: #00ccff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .hero {
+            background-image: url('circuit-board.jpg'); 
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #00ccff;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content {
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #FFFFFF; /* Tarjetas con fondo blanco */
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px; /* Altura fija para uniformidad */
+            object-fit: cover; /* Mantiene la proporción de la imagen */
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin: 15px 0 10px;
+            color: #00ccff;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Dariku Electronics Logo"> 
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#about">Sobre Nosotros</a>
+            <a href="#services">Servicios</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Innovación en Electrónica</h1>
+        <p>Diseñamos y desarrollamos soluciones electrónicas de vanguardia para un futuro más conectado.</p>
+    </section>
+
+    <section class="content" id="services">
+        <div class="card">
+            <img src="Motherboard.jpg" alt="Motherboard"> <!-- Imagen local -->
+            <h3>Desarrollo de Circuitos</h3>
+            <p>Prototipos personalizados y diseño de PCB para diversas aplicaciones.</p>
+        </div>
+        <div class="card">
+            <img src="Circuit Design.jpg" alt="Circuit Design"> <!-- Imagen local -->
+            <h3>Consultoría Electrónica</h3>
+            <p>Asesoría técnica especializada en sistemas electrónicos avanzados.</p>
+        </div>
+        <div class="card">
+            <img src="Laboratory.jpg" alt="Laboratory"> <!-- Imagen local -->
+            <h3>Laboratorio de Pruebas</h3>
+            <p>Equipos de última generación para pruebas y validación de hardware.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>© 2022 Dariku Electronics | Todos los derechos reservados</p>
+        <p>Contacto: info@darikuelectronics.com</p>
+    </footer>
+</body>
+</html>
